@@ -8,7 +8,7 @@ public class Movie {
     String movieCd;
     String movieNm;
     String openDt;
-    String salesAmt;
+    String salesAnt;
     String salesShare;
     String salesInten;
     String salesChange;

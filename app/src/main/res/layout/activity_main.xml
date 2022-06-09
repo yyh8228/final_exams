@@ -11,7 +11,7 @@
         android:id="@+id/requestText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=e20ce8be7573300a24185e784ddd02f6&amp;targetDt=20220501"
+        android:text="https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=e20ce8be7573300a24185e784ddd02f6&amp;targetDt=20220608"
         />
     <Button
         android:id="@+id/requestBtn"
@@ -19,18 +19,9 @@
         android:layout_height="wrap_content"
         android:text="요청하기"
         />
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/responseText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"/>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"/>
 </LinearLayout>
